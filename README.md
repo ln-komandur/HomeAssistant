@@ -3,7 +3,23 @@
 ## Installation
 [Install HA OS on an SSD on an Intel PC](https://www.home-assistant.io/installation/generic-x86-64/)
 
-## Connect to Wifi from command line
+## Connect to Wifi after installation
+
+`login`
+
+`nmcli radio` *# Show the current status of all radio devices*
+
+`nmcli device wifi` *# Show all SSIDs in range*
+
+`nmcli device wifi connect <SSID> --ask` *# Connect to the given SSID by prompting for its password*
+
+`nmcli connection show` *# Show all configured connections and devices in the last column*
+
+`ip addr show | more ` *# Show the ip address in the networks connected to*
+
+`nmcli device disconnect <device>` *# Disconnect the device*
+
+`nmcli connection delete <SSID>` *# Delete the SSID from any automatic connections / history*
 
 ## Tailscale
 
