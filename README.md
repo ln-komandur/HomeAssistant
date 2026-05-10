@@ -11,7 +11,7 @@ Seems to work well for remote access (after comparing opinions against Nabu Casa
 Do not configure as exit node
 
 ## SSH
-For remote access and server shutdown down if needed
+For remote access and server shutdown down if needed. Follow [this guide](https://lazyadmin.nl/smart-home/enable-ssh-home-assistant/)
 
 ## Configure BIOS to restart in case of power outage
 
