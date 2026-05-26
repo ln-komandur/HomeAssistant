@@ -29,7 +29,7 @@ There are several options enabled by default in the **Settings** -> **Apps** -> 
 
 #### Option 1: Need not Accept Subnet routes - can be turned off
 
-Reolink cameras will still work without subnet routes (guess they go through Reolink's clour servers then. Though live feeds work, unsure about automations and latencies)
+Reolink cameras will still work without subnet routes (guess they go through Reolink's clour servers then. Though live feeds and automations work, unsure about latencies)
 
 1.  Open the Home Assistant Dashboard.
 1.  Go to **Settings** -> **Apps** -> **Tailscale** and click on the **Configuration** tab at the top
@@ -37,7 +37,7 @@ Reolink cameras will still work without subnet routes (guess they go through Reo
 
 #### Option 2: Accept Subnet routes IPv4 and IPv6
 
-This option may be preferred as it might be avoiding Reolink's cloud servers for automations
+This option may be preferred as it might be avoiding Reolink's cloud servers for automations, and have better latencies
 
 1.  Open the Home Assistant Dashboard
 1.  Go to **Settings** -> **Apps** -> **Tailscale** and click on the **Configuration** tab at the top
