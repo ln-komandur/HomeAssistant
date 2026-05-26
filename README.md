@@ -23,7 +23,22 @@
 
 ## Tailscale
 
-Works well for remote access. Do not configure as exit node
+There are several options enabled by default in the **Settings** -> **Apps** -> **Tailscale** under the **Configuration** tab at the top. Not all of them are needed to be enabled
+
+### Accept Subnet routes IPv4 and IPv6
+
+1.  Open the Home Assistant Dashboard.
+1.  Go to **Settings** -> **System** -> **Network**
+1.  Look under the IPv4 section and under the IPv6 section for the IP addresses 
+1.  Match these with the **Tailscale Admin Console** for the homeassistant machine under **Edit route settings**
+1.  Login to your **router**, and match these with the **Active IP leases** (for IPv4 as well as IPv6)
+
+
+### Turn off Exit node or Connector
+
+1.  Open the Home Assistant Dashboard.
+1.  Go to **Settings** -> **Apps** -> **Tailscale** and click on the **Configuration** tab at the top
+1.  Look at the **Options** section and uncheck **Advertise as an exit node** as well as **Advertise as an app connector**
 
 ## SSH
 For remote access and server shutdown down if needed. Follow [this guide](https://lazyadmin.nl/smart-home/enable-ssh-home-assistant/)
