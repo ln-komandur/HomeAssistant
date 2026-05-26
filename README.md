@@ -54,6 +54,12 @@ This option may be preferred as it might be avoiding Reolink's cloud servers for
 1.  Go to **Settings** -> **Apps** -> **Tailscale** and click on the **Configuration** tab at the top
 1.  Under the **Options** section and uncheck **Advertise as an exit node** as well as **Advertise as an app connector**
 
+### Enable Tailscale Serve and Reverse Proxy
+
+This helps to avoid appending the port number 8123 in the URL, generates a TLS certificate automatically and to access the server over https
+
+[Refer this video](https://youtu.be/vDxmtRByXDY)
+
 ## SSH
 For remote access and server shutdown down if needed. Follow [this guide](https://lazyadmin.nl/smart-home/enable-ssh-home-assistant/)
 
