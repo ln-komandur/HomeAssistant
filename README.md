@@ -61,14 +61,16 @@ This helps to avoid appending the port number 8123 in the URL, generates a TLS c
 [Refer this video](https://youtu.be/vDxmtRByXDY) for detailed instructions though they are old
 
 1.  Go to **Settings** -> **Apps** -> **Tailscale** and click on the **Configuration** tab at the top and enable **Tailscale Serve**
-1.  Install and start **Studio Code Server** app and add the following lines at the end of configuration.yaml. Restart HomeAssistant and verify that the https URL works without port number.  **Studio Code Server** app can be uninstalled after that.
+1.  Go to **Settings** -> **Apps** -> **Install App**. Search and Install **Studio Code Server**. Start the app after successful installation 
+1.  Edit the `configuration.yaml` and add the following lines at its end. Save the edits to `configuration.yaml` and Restart HomeAssistant to verify that the https URL works without port number
 
-```
-http:
-  use_x_forwarded_for: true
-  trusted_proxies:
-    - 127.0.0.1
-```
+  ```
+  http:
+    use_x_forwarded_for: true
+    trusted_proxies:
+      - 127.0.0.1
+  ```
+4.  Stop and Uninstall **Studio Code Server** after successful verification
 
 ## SSH
 For remote access and server shutdown down if needed. Follow [this guide](https://lazyadmin.nl/smart-home/enable-ssh-home-assistant/)
