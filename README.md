@@ -58,7 +58,17 @@ This option may be preferred as it might be avoiding Reolink's cloud servers for
 
 This helps to avoid appending the port number 8123 in the URL, generates a TLS certificate automatically and to access the server over https
 
-[Refer this video](https://youtu.be/vDxmtRByXDY)
+[Refer this video](https://youtu.be/vDxmtRByXDY) for detailed instructions though they are old
+
+1.  Go to **Settings** -> **Apps** -> **Tailscale** and click on the **Configuration** tab at the top and enable **Tailscale Serve**
+1.  Install and start **Studio Code Server** app and add the following lines at the end of configuration.yaml. Restart HomeAssistant and verify that the https URL works without port number.  **Studio Code Server** app can be uninstalled after that.
+
+```
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 127.0.0.1
+```
 
 ## SSH
 For remote access and server shutdown down if needed. Follow [this guide](https://lazyadmin.nl/smart-home/enable-ssh-home-assistant/)
